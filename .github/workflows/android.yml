@@ -1,12 +1,13 @@
-name: Build APK
+name: Build MK VIP
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build with Buildozer
-        uses: ArtemShatem/buildozer-action@v1
+      - name: Buildozer Action
+        uses: ArtemShatem/buildozer-action@v1.2
         with:
           workdir: .
-
+          buildozer_version: master
