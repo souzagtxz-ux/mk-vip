@@ -9,3 +9,4 @@ jobs:
         uses: ArtemShatem/buildozer-action@v1
         with:
           workdir: .
+
